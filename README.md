@@ -41,19 +41,19 @@ The quality degradation of underwater images severely restricts the accuracy of 
 
 ## 🧠 Method
 ### Overall Pipeline
-![Pipeline](docs/1.jpg)
+![Pipeline](illustration/1.jpg)
 Three-stage framework:
 1. **Preliminary Enhancement & Semantic Segmentation** (WaterNet + CoralScapes)
 2. **Degradation Quantification** (depth/color/illumination + K-means clustering)
 3. **Self-Prior Guided Enhancement** (RefEnhNet with feature alignment)
 
 ### Degradation Quantification
-![Degradation](docs/3.jpg)
+![Degradation](illustration/3.jpg)
 - Multi-dimensional feature: **depth (0.6) + color (0.3) + illumination (0.1)**
 - Unsupervised K-means clustering to split low/high degradation regions
 
 ### RefEnhNet Architecture
-![Network](docs/2.jpg)
+![Network](illustration/2.jpg)
 - **Texture Consistency Module (TCM)**
 - **Color Consistency Module (CCM)**
 - **Illumination Consistency Module (ICM)**
@@ -63,9 +63,9 @@ Three-stage framework:
 
 ## 📊 Results
 ### Visual Comparison
-![Visual Results 1](docs/4.jpg)
-![Visual Results 2](docs/6.jpg)
-![Visual Results 3](docs/7.jpg)
+![Visual Results 1](illustration/4.jpg)
+![Visual Results 2](illustration/6.jpg)
+![Visual Results 3](illustration/7.jpg)
 
 ### Quantitative Performance
 | Method | TS | CDS | IC | NSC | Params(M) | FLOPs(G) |
@@ -77,7 +77,7 @@ Three-stage framework:
 - Boosts downstream tasks: **+30~40% feature points**, **+15~20% matching rate**
 
 ### Ablation Study
-![Ablation](docs/5.jpg)
+![Ablation](illustration/5.jpg)
 All modules (TCM/CCM/ICM/FL) are critical for consistent, natural enhancement.
 
 ---
