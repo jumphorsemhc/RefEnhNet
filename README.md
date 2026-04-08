@@ -1,7 +1,7 @@
 # RefEnhNet
 > ⚠️ **NOTE**: The complete code files will be uploaded after the paper is accepted.
 
-**Self-Prior Guided Underwater Image Enhancement Inspired by Ancient Mural Restoration**
+**Self-Prior Guided Underwater Image Enhancement**
 
 ---
 
